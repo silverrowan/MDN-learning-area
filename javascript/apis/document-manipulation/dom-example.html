@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple DOM example</title>
+    <style>
+      .highlight {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
       <section>
@@ -32,6 +41,8 @@
         // linkParaCopy.remove(text2)
         text2.remove(); //but older browswers dont recognize (how old?) so use
         // text2.parentNode.removeChild(text2) to self refer
+
+        para.setAttribute("class", "highlight");
       </script>
   </body>
 </html>
