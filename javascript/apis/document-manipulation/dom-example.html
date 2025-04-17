@@ -27,8 +27,11 @@
         // sect.appendChild(linkPara);
         linkParaCopy = linkPara.cloneNode();
         linkParaCopy.appendChild(text2);
+
         sect.appendChild(linkParaCopy)
-        linkParaCopy.remove(text2)
+        // linkParaCopy.remove(text2)
+        text2.remove(); //but older browswers dont recognize (how old?) so use
+        // text2.parentNode.removeChild(text2) to self refer
       </script>
   </body>
 </html>
